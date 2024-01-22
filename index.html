@@ -10,8 +10,17 @@
 
   <!-- icon -->
   <link rel="icon" href="./namer-logo.png" type="image/png">
+  <script>
+    !function (p) { "use strict"; !function (t) { var s = window, e = document, i = p, c = "".concat("https:" === e.location.protocol ? "https://" : "http://", "sdk.51.la/js-sdk-pro.min.js"), n = e.createElement("script"), r = e.getElementsByTagName("script")[0]; n.type = "text/javascript", n.setAttribute("charset", "UTF-8"), n.async = !0, n.src = c, n.id = "LA_COLLECT", i.d = n; var o = function () { s.LA.ids.push(i) }; s.LA ? s.LA.ids && o() : (s.LA = p, s.LA.ids = [], o()), r.parentNode.insertBefore(n, r) }() }({ id: "KKAofuDuMC7W0HWQ", ck: "KKAofuDuMC7W0HWQ" });
+  </script>
 
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     .content {
       width: 100vw;
       height: 80vh;
@@ -19,6 +28,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 20px;
+      color: #333;
+      line-height: 1.5;
+      text-align: center;
+      overflow: hidden;
     }
 
     .logo {
@@ -27,8 +41,39 @@
       border-radius: 50%;
     }
 
+    .title {
+      margin: 20px 0;
+      font-size: 30px;
+    }
+
+    .desc {
+      font-size: 16px;
+      color: #777;
+    }
+
     .go {
-      font-size: 34px;
+      display: block;
+      padding: 0 30px;
+      margin-top: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 24px;
+      background-color: #006cbe;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+
+    .go:hover {
+      opacity: .9;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 20px;
+      font-size: 12px;
+      color: #999;
     }
   </style>
 </head>
@@ -37,13 +82,16 @@
   <div class="content">
     <img src="./namer-logo.png" alt="Logo" class="logo">
 
-    <h1>Developer Namer</h1>
-    <p>A developer's namer, capable of naming variables, functions, modules, classes, etc...</p>
+    <h1 class="title">Developer Namer</h1>
+    <p class="desc">A Code Naming Tool That Assists Developers in Standardizing and Rationalizing Names for Variables,
+      Functions,
+      Modules, and Files.</p>
 
-    <div>
-      <a class="go" href="https://chat.openai.com/g/g-BZ8K8mOBB-developer-namer">Go</a>
-    </div>
+    <a class="go" href="https://chat.openai.com/g/g-BZ8K8mOBB-developer-namer">Goto GPTs</a>
+
+    <footer class="footer">2220124666@qq.com</footer>
   </div>
+
 </body>
 
 </html>
