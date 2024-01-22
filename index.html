@@ -4,15 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Developer Namer</title>
+  <title>Developer Namer - GPTs</title>
   <meta name="description"
-    content="A developer's namer, capable of naming variables, functions, modules, classes, etc...">
-
-  <!-- icon -->
+    content="A Code Naming Tool That Assists Developers in Standardizing and Rationalizing Names for Variables,Functions,Modules,and Files.">
   <link rel="icon" href="./namer-logo.png" type="image/png">
+
   <script>
     !function (p) { "use strict"; !function (t) { var s = window, e = document, i = p, c = "".concat("https:" === e.location.protocol ? "https://" : "http://", "sdk.51.la/js-sdk-pro.min.js"), n = e.createElement("script"), r = e.getElementsByTagName("script")[0]; n.type = "text/javascript", n.setAttribute("charset", "UTF-8"), n.async = !0, n.src = c, n.id = "LA_COLLECT", i.d = n; var o = function () { s.LA.ids.push(i) }; s.LA ? s.LA.ids && o() : (s.LA = p, s.LA.ids = [], o()), r.parentNode.insertBefore(n, r) }() }({ id: "KKAofuDuMC7W0HWQ", ck: "KKAofuDuMC7W0HWQ" });
   </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <style>
     * {
@@ -21,14 +22,19 @@
       box-sizing: border-box;
     }
 
+    body {
+      position: relative;
+      min-height: 100vh;
+      padding-bottom: 50px;
+    }
+
     .content {
-      width: 100vw;
-      height: 80vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      width: 100%;
+      padding: 80px 30px 0;
       color: #333;
       line-height: 1.5;
       text-align: center;
@@ -54,10 +60,11 @@
     .go {
       display: block;
       padding: 0 30px;
-      margin-top: 50px;
+      margin-top: 40px;
+      min-width: 200px;
       height: 50px;
       line-height: 50px;
-      font-size: 24px;
+      font-size: 16px;
       background-color: #006cbe;
       color: #fff;
       border-radius: 25px;
@@ -69,9 +76,45 @@
       opacity: .9;
     }
 
+    .swiper-container {
+      position: relative;
+      margin-top: 30px;
+      width: 100%;
+      max-width: 700px;
+      background: #343541;
+      font-size: 0;
+      box-sizing: content-box;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .swiper {
+      --swiper-pagination-color: #fff;
+      --swiper-pagination-bullet-inactive-color: #fff;
+
+      width: 100%;
+      height: 0;
+      padding-bottom: 58%;
+    }
+
+    .swiper-slide {
+      height: 100%;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     .footer {
-      position: fixed;
-      bottom: 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
       font-size: 12px;
       color: #999;
     }
@@ -89,9 +132,32 @@
 
     <a class="go" href="https://chat.openai.com/g/g-BZ8K8mOBB-developer-namer">Goto GPTs</a>
 
-    <footer class="footer">2220124666@qq.com</footer>
+    <div class="swiper-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> <img src="./images/1.png"> </div>
+          <div class="swiper-slide"> <img src="./images/2.png"> </div>
+          <div class="swiper-slide"> <img src="./images/3.png"> </div>
+          <div class="swiper-slide"> <img src="./images/4.png"> </div>
+          <div class="swiper-slide"> <img src="./images/5.png"> </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
   </div>
 
+  <footer class="footer">2220124666@qq.com</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".swiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+  </script>
 </body>
 
 </html>
