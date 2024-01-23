@@ -115,6 +115,10 @@
       height: 50px;
       line-height: 50px;
       text-align: center;
+    }
+
+    .footer a {
+      text-decoration: none;
       font-size: 12px;
       color: #999;
     }
@@ -147,7 +151,9 @@
     </div>
   </div>
 
-  <footer class="footer">2220124666@qq.com</footer>
+  <footer class="footer">
+    <a href="mailto:2220124666@qq.com">E-Mail: 2220124666@qq.com</a>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
@@ -155,6 +161,10 @@
       pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
       },
     });
   </script>
